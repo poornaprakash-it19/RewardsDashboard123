@@ -49,7 +49,7 @@
                     ],
                     type: 'spline',
                     colors: {
-                         data1: '#5969ff',
+                        data1: '#5969ff',
                         data2: '#ff407b',
 
                     }
@@ -270,27 +270,22 @@
         if ($('#c3chart_pie').length) {
             var chart = c3.generate({
                 bindto: "#c3chart_pie",
+
                 data: {
                     columns: [
-                        ['data1', 30],
-                        ['data2', 50]
+                        ['INNOVATIVE PRACTICE - 1 (IP - 1)', 30],
+                        ['INNOVATIVE PRACTICE - 2 (IP - 2)', 50]
                     ],
                     type: 'pie',
 
                     colors: {
-                         data1: '#5969ff',
+                        data1: '#5969ff',
                         data2: '#ff407b'
 
 
                     }
                 },
-                pie: {
-                    label: {
-                        format: function(value, ratio, id) {
-                            return d3.format('$')(value);
-                        }
-                    }
-                }
+
             });
         }
 
@@ -308,7 +303,7 @@
                     onmouseout: function(d, i) { console.log("onmouseout", d, i); },
 
                     colors: {
-                         data1: '#5969ff',
+                        data1: '#5969ff',
                         data2: '#ff407b'
 
 
@@ -356,7 +351,7 @@
                     onmouseover: function(d, i) { console.log("onmouseover", d, i); },
                     onmouseout: function(d, i) { console.log("onmouseout", d, i); },
                     colors: {
-                      data1: '#5969ff',
+                        data1: '#5969ff',
                         data2: '#ff407b',
                         data3: '#25d5f2',
                         data4: '#ffc750',

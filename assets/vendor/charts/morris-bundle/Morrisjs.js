@@ -16,11 +16,11 @@
                 xkey: 'x',
                 ykeys: ['y', 'z'],
                 labels: ['Y', 'Z'],
-                 lineColors: ['#5969ff', '#ff407b'],
-                   resize: true,
-                   gridTextSize: '14px'
+                lineColors: ['#5969ff', '#ff407b'],
+                resize: true,
+                gridTextSize: '14px'
 
-                
+
             });
 
         }
@@ -46,9 +46,9 @@
                 xkey: 'y',
                 ykeys: ['a', 'b'],
                 labels: ['Series A', 'Series B'],
-                   lineColors: ['#5969ff', '#ff407b'],
-                     resize: true,
-                        gridTextSize: '14px'
+                lineColors: ['#5969ff', '#ff407b'],
+                resize: true,
+                gridTextSize: '14px'
             });
 
         }
@@ -57,22 +57,21 @@
             Morris.Bar({
                 element: 'morris_bar',
                 data: [
-                    { x: '2011 Q1', y: 0 },
-                    { x: '2011 Q2', y: 1 },
-                    { x: '2011 Q3', y: 2 },
-                    { x: '2011 Q4', y: 3 },
-                    { x: '2012 Q1', y: 4 },
-                    { x: '2012 Q2', y: 5 },
-                    { x: '2012 Q3', y: 6 },
-                    { x: '2012 Q4', y: 7 },
-                    { x: '2013 Q1', y: 8 }
+                    { x: 'June', y: 1500 },
+                    { x: 'July', y: 1200 },
+                    { x: 'August', y: 250 },
+                    { x: 'Sept', y: 1750 },
+                    { x: 'oct', y: 400 },
+                    { x: 'november', y: 300 },
+
+
                 ],
                 xkey: 'x',
                 ykeys: ['y'],
-                labels: ['Y'],
-                   barColors: ['#5969ff'],
-                     resize: true,
-                        gridTextSize: '14px'
+                labels: ['Rewards'],
+                barColors: ['#5969ff'],
+                resize: true,
+                gridTextSize: '14px'
 
             });
         }
@@ -92,9 +91,9 @@
                 ykeys: ['y', 'z', 'a'],
                 labels: ['Y', 'Z', 'A'],
                 stacked: true,
-                   barColors: ['#5969ff', '#ff407b', '#25d5f2'],
-                     resize: true,
-                        gridTextSize: '14px'
+                barColors: ['#5969ff', '#ff407b', '#25d5f2'],
+                resize: true,
+                gridTextSize: '14px'
             });
         }
 
@@ -125,7 +124,7 @@
                 ymax: 1.0,
                 hideHover: true,
                 lineColors: ['#5969ff', '#ff407b'],
-                  resize: true
+                resize: true
             });
 
             function update() {
@@ -141,24 +140,33 @@
             Morris.Donut({
                 element: 'morris_donut',
                 data: [
-                    { value: 70, label: 'foo' },
-                    { value: 15, label: 'bar' },
-                    { value: 10, label: 'baz' },
-                    { value: 5, label: 'A really really long label' }
-                ],
-             
-                labelColor: '#2e2f39',
-                   gridTextSize: '14px',
-                colors: [
-                     "#5969ff",
-                                "#ff407b",
-                                "#25d5f2",
-                                "#ffc750"
-                               
+                    { value: 1700, label: 'TECHNICAL EVENTS' },
+                    { value: 1500, label: 'SKILLS' },
+                    { value: 1250, label: 'ASSIGNMENTS' },
+                    { value: 500, label: 'EXAMINATIONS' },
+                    { value: 150, label: 'FACULTY INITIATIVES' },
+                    { value: 100, label: 'LAB INITIATIVES' },
+                    { value: 50, label: 'SPECIAL LAB INITIATIVES' }, { value: 15, label: 'EXTRA-CURRICULAR ACTIVITIES' },
+                    { value: 100, label: 'STUDENT INITIATIVES' },
+                    { value: 50, label: 'EXTERNAL EVENTS' }
                 ],
 
-                formatter: function(x) { return x + "%" },
-                  resize: true
+                labelColor: '#2e2f39',
+                gridTextSize: '66px',
+                colors: [
+                    "#5969ff",
+                    "#ff407b",
+                    "#25d5f2",
+                    "#ffc750",
+                    "#5969ff",
+                    "#ff407b",
+                    "#25d5f2",
+                    "#ffc750"
+
+                ],
+
+                formatter: function(value) { return value },
+                resize: true
             });
         }
 
